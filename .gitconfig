@@ -1,6 +1,6 @@
 [user]
-	name = yusuke furuta
-	email = yusukefulltype@gmail.com
+	name = yusuke hoge
+	email = hogehoge@gmail.com
 [core]
 	editor = vim -c \"set fenc=utf-8\"
 	quotepath = false
