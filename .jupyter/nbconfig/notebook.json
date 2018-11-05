@@ -1,0 +1,40 @@
+{
+  "load_extensions": {
+    "spellchecker/main": true,
+    "snippets/main": true,
+    "codefolding/main": true,
+    "move_selected_cells/main": true,
+    "hinterland/hinterland": true,
+    "printview/main": false,
+    "python-markdown/main": true,
+    "runtools/main": true,
+    "toggle_all_line_numbers/main": true,
+    "table_beautifier/main": true,
+    "highlight_selected_word/main": true,
+    "varInspector/main": true,
+    "init_cell/main": true,
+    "code_prettify/autopep8": true,
+    "code_prettify/code_prettify": true,
+    "code_font_size/code_font_size": true,
+    "comment-uncomment/main": true,
+    "equation-numbering/main": true,
+    "exercise2/main": false,
+    "highlighter/highlighter": true,
+    "navigation-hotkeys/main": true,
+    "snippets_menu/main": true,
+    "jupyter-js-widgets/extension": true,
+    "skill/main": false,
+    "execute_time/ExecuteTime": true,
+    "help_panel/help_panel": true,
+    "scratchpad/main": true,
+    "rubberband/main": true,
+    "toc2/main": true
+  },
+  "snippets": {
+    "insert_as_new_cell": false
+  },
+  "ExecuteTime": {
+    "display_right_aligned": true,
+    "clear_timings_on_clear_output": false
+  }
+}
