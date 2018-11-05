@@ -1,0 +1,12 @@
+[user]
+	name = yusuke furuta
+	email = yusukefulltype@gmail.com
+[core]
+	editor = vim -c \"set fenc=utf-8\"
+	quotepath = false
+[color]
+	diff = auto
+	status = auto
+	branch = auto
+[push]
+	default = simple
