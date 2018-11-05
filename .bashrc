@@ -130,7 +130,7 @@ alias jnote='jupyter notebook'
 alias open='xdg-open'
 
 # added by Anaconda3 installer
-export PATH="/home/yusukefulltype/anaconda3/bin:$PATH"
+export PATH="/home/ubuntu/anaconda3/bin:$PATH"
 
 # peco - cd expanded
 function cc {
