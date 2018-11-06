@@ -104,7 +104,7 @@ module.exports = {
     shellArgs: ['--login'],
 
     // for environment variables
-    env: {},
+    env: {LANG: 'ja_JP.UTF-8'},
 
     // set to `false` for no bell
     bell: 'SOUND',
@@ -123,6 +123,7 @@ module.exports = {
     // bellSoundURL: 'http://example.com/bell.mp3',
 
     // for advanced config flags please refer to https://hyper.is/#cfg
+    windowSize: [1080, 760]
   },
 
   // a list of plugins to fetch and install from npm
@@ -131,7 +132,12 @@ module.exports = {
   //   `hyperpower`
   //   `@company/project`
   //   `project#1.0.1`
-  plugins: [],
+  plugins: [
+      'hyper-material-theme',
+      'hyperline',
+      'hyper-tab-icons-plus',
+      'hyper-search' // ctrl + shift + f
+  ],
 
   // in development, you can create a directory under
   // `~/.hyper_plugins/local/` and include it here
