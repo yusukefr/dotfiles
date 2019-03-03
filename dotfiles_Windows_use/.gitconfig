@@ -1,0 +1,17 @@
+[http]
+#	proxy = http://192.168.20.83:8080
+[https]
+#	proxy = http://192.168.20.83:8080
+[user]
+	name = furuta yusuke
+	email = furutayu@hoge.co.jp
+[core]
+	editor = vim -c \"set fenc=utf-8\"
+	quotepath = false
+[color]
+	diff = auto
+	status = auto
+	branch = auto
+[credential]    
+	helper = !aws --region us-west-2 --profile CodeCommitProfile credential-helper $@
+	UseHttpPath = true
