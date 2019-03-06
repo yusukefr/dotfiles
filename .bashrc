@@ -50,9 +50,9 @@ if [ -n "$force_color_prompt" ]; then
 	# We have color support; assume it's compliant with Ecma-48
 	# (ISO/IEC-6429). (Lack of such support is extremely rare, and such
 	# a case would tend to support setf rather than setaf.)
-	color_prompt=yes
+	    color_prompt=yes
     else
-	color_prompt=
+	    color_prompt=
     fi
 fi
 
@@ -91,6 +91,12 @@ fi
 alias ll='ls -alF'
 alias la='ls -A'
 alias l='ls -CF'
+# 移動/コピー/削除時に、経過を表示
+alias cp 'cp -v'
+alias mv 'mv -v'
+alias rm 'rm -v'
+# 単位をGB,MB,KBにする
+alias df 'df -h'
 
 # Add an "alert" alias for long running commands.  Use like so:
 #   sleep 10; alert
@@ -130,7 +136,7 @@ alias jnote='jupyter notebook'
 alias open='xdg-open'
 
 # added by Anaconda3 installer
-export PATH="/home/ubuntu/anaconda3/bin:$PATH"
+export PATH="/home/yusukefulltype/anaconda3/bin:$PATH"
 
 # peco - cd expanded
 function cc {
