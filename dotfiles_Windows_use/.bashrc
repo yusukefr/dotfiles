@@ -92,8 +92,12 @@ alias ll='ls -alF'
 alias la='ls -A'
 alias l='ls -CF'
 
-# dfコマンドの単位を見やすく
-alias df='df -h'
+# 移動/コピー/削除時に、経過を表示
+alias cp 'cp -v'
+alias mv 'mv -v'
+alias rm 'rm -v'
+# 単位をGB,MB,KBにする
+alias df 'df -h'
 
 # tree コマンドで日本語ファイル名、フォルダ名が文字化けしないように
 alias tree='tree -N'
