@@ -1,7 +1,13 @@
-## file list
-```
+# file list
+
+```text
 .
 ├── .bashrc
+├── .fzf.bash
+├── .gitconfig
+├── .gitignore_global
+├── .hyper.js
+├── .vimrc
 ├── .config
 │   ├── clipit
 │   │   └── clipitrc
@@ -9,9 +15,6 @@
 │   │   └── config.fish
 │   └── Hyper
 │       └── config.json
-├── .fzf.bash
-├── .gitconfig
-├── .hyper.js
 ├── .jupyter
 │   ├── jupyter_notebook_config.py
 │   ├── lab
@@ -19,13 +22,10 @@
 │   │       └── @jupyterlab
 │   │           └── apputils-extension
 │   │               └── themes.jupyterlab-settings
-│   ├── migrated
 │   └── nbconfig
 │       ├── edit.json
 │       ├── notebook.json
 │       └── tree.json
-├── .plotly
-│   ├── .config
-│   └── .credentials
-└── .vimrc
+└── .plotly
+    └── .config
 ```
