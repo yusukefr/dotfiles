@@ -142,11 +142,11 @@ fi
 unset __conda_setup
 # <<< conda init <<<
 
-# use TMI proxy
-#export HTTP_PROXY=http://192.168.20.83:8080/
-#export http_proxy=http://192.168.20.83:8080/
-#export HTTPS_PROXY=http://192.168.20.83:8080/
-#export https_proxy=http://192.168.20.83:8080/
+# use proxy
+#export HTTP_PROXY=http://192.168.xxxx:8080/
+#export http_proxy=http://192.168.xx.xx:8080/
+#export HTTPS_PROXY=http://192.168.xx.xx:8080/
+#export https_proxy=http://192.168.xx.xx:8080/
 
 # use AWS-CLI
 alias aws='aws.cmd'
@@ -174,7 +174,7 @@ alias s3b='s3browser-win32.exe'
 # https://github.com/sharkdp/bat#using-bat-on-windows
 #--export BAT_PAGER=''/c/Program\ Files/S3\ Browser
 #export BAT_CONFIG_PATH="/path/to/bat.conf"
-export BAT_CONFIG_PATH='/c/Users/furutayu/.bat/batrc'
+export BAT_CONFIG_PATH='~/.bat/batrc'
 
 # resolving path in docker use
 # https://github.com/moby/moby/issues/24029
