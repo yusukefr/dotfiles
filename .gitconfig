@@ -1,9 +1,10 @@
 [user]
-	name = yusuke hoge
-	email = hogehoge@gmail.com
+	name = xxxxxx furuta
+	email = xxxxxx@hoge.co.jp
 [core]
 	editor = vim -c \"set fenc=utf-8\"
 	quotepath = false
+	excludesfile = ~/.gitignore_global
 [color]
 	diff = auto
 	status = auto
@@ -11,4 +12,14 @@
 [push]
 	default = simple
 [credential]
+	# aws の credential-helper を使う場合 (~/.aws/credentials にCodeCommit用のプロファイル情報を用意した上で下記のコメントアウトを解除)
+	# helper = !aws --region us-east-2 --profile CodeCommitProfile credential-helper $@
+	# UseHttpPath = true
+	
 	helper = cache --timeout=3600
+[grep]
+	lineNumber = true
+# [http]
+#	proxy = http://192.168.21.4:8080
+# [https]
+#	proxy = http://192.168.21.4:8080
