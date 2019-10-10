@@ -6,6 +6,10 @@
 ├── .fzf.bash
 ├── .gitconfig
 ├── .gitignore_global
+├── .github
+│   ├── issue_bug.md
+│   ├── issue_feature.md
+│   └── pull_request.md
 ├── .hyper.js
 ├── .vimrc
 ├── .config
