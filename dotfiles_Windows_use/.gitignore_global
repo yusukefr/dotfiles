@@ -6,6 +6,9 @@
 *.tmp
 *.temp
 
+# --- github ---
+.github/*
+
 # --- vscode ---
 .vscode/*
 !.vscode/settings.json
