@@ -1,0 +1,110 @@
+{
+  // -- Startup --
+  "workbench.startupEditor": "readme",
+  // -- Theme --
+  "workbench.colorTheme": "Material Theme",
+  "workbench.iconTheme": "material-icon-theme",
+  "material-icon-theme.showUpdateMessage": false,
+  // -- Style --
+  "window.titleBarStyle": "custom",
+  // -- Files --
+  "files.autoGuessEncoding": true,
+  "files.insertFinalNewline": true,
+  "files.trimFinalNewlines": true,
+  "workbench.editor.labelFormat": "medium",
+  // -- Editor --
+  "editor.fontFamily": "'Source Code Pro', 'Noto Color Emoji', 'Droid Sans Mono', 'monospace', 'Droid Sans Fallback'",
+  "editor.smoothScrolling": true,
+  "editor.cursorSmoothCaretAnimation": true,
+  "editor.renderWhitespace": "all",
+  "editor.wordWrap": "on",
+  "editor.mouseWheelZoom": true,
+  "editor.trimAutoWhitespace": false,
+  "editor.suggestSelection": "first",
+  "workbench.editor.closeOnFileDelete": true,
+  "workbench.editor.highlightModifiedTabs": true,
+  // -- Git --
+  "git.autofetch": true,
+  "gitlens.advanced.messages": {
+    "suppressShowKeyBindingsNotice": true
+  },
+  "gitProjectManager.displayProjectPath": true,
+  "gitProjectManager.baseProjectsFolders": [
+    "~/projects"
+  ],
+  // -- Markdown --
+  "markdown.extension.showExplorer": true,
+  "markdown.extension.toc.githubCompatibility": true,
+  // -- Python --
+  // Whether to lint Python files using flake8
+  "python.linting.flake8Enabled": true,
+  "python.linting.mypyEnabled": true,
+  "python.jediEnabled": false,
+  "python.formatting.provider": "yapf",
+  // -- intellicode --
+  "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
+  // -- Formatter --
+  "[markdown]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[javascript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[jsonc]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[json]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[typescript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[html]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[yaml]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  // -- Lint --
+  "eslint.alwaysShowStatus": true,
+  "eslint.lintTask.enable": true,
+  "eslint.validate": [
+    "javascript",
+    "javascriptreact",
+    "typescript"
+  ],
+  // -- Spell Checker --
+  "cSpell.userWords": [
+    "LLVM",
+    "SQLPL",
+    "adduser",
+    "autoremove",
+    "cheatsheet",
+    "controlvm",
+    "cython",
+    "downlevel",
+    "esnext",
+    "flameshot",
+    "furuta",
+    "gitignore",
+    "gitlens",
+    "hyperline",
+    "interop",
+    "jupyter",
+    "lv",
+    "markdown",
+    "nginx",
+    "peco",
+    "plsql",
+    "poweroff",
+    "readonly",
+    "runningvms",
+    "sourcemap",
+    "startvm",
+    "stringify",
+    "timedatectl",
+    "traceback",
+    "tslib",
+    "typechecking"
+  ],
+}

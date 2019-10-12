@@ -15,6 +15,10 @@
 ├── .config
 │   ├── clipit
 │   │   └── clipitrc
+│   ├── Code
+│   │   └── User
+│   │       └── keybindings.json
+│   │       └── settings.json
 │   ├── fish
 │   │   └── config.fish
 │   └── Hyper
