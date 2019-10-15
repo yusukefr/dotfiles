@@ -4,14 +4,16 @@
   // -- Theme --
   "workbench.colorTheme": "Material Theme",
   "workbench.iconTheme": "material-icon-theme",
+  "materialTheme.accent": "Lime",
   "material-icon-theme.showUpdateMessage": false,
   // -- Style --
   "window.titleBarStyle": "custom",
+  "workbench.editor.labelFormat": "medium",
+  "workbench.editor.highlightModifiedTabs": true,
   // -- Files --
   "files.autoGuessEncoding": true,
   "files.insertFinalNewline": true,
   "files.trimFinalNewlines": true,
-  "workbench.editor.labelFormat": "medium",
   // -- Editor --
   "editor.fontFamily": "'Source Code Pro', 'Noto Color Emoji', 'Droid Sans Mono', 'monospace', 'Droid Sans Fallback'",
   "editor.smoothScrolling": true,
@@ -22,7 +24,14 @@
   "editor.trimAutoWhitespace": false,
   "editor.suggestSelection": "first",
   "workbench.editor.closeOnFileDelete": true,
-  "workbench.editor.highlightModifiedTabs": true,
+  // -- Search --
+  "search.exclude": {
+    ".history": true
+  },
+  "search.showLineNumbers": true,
+  "search.useGlobalIgnoreFiles": true,
+  // -- Debug --
+  "debug.inlineValues": true,
   // -- Git --
   "git.autofetch": true,
   "gitlens.advanced.messages": {
@@ -32,39 +41,57 @@
   "gitProjectManager.baseProjectsFolders": [
     "~/projects"
   ],
+  // -- CodeLens -- Class, 変数などのコード内での参照先を表示
+  "editor.codeLens": true,
+  "typescript.referencesCodeLens.enabled": true,
+  "typescript.implementationsCodeLens.enabled": true,
+  // -- IntelliCode --
+  "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
+  "vsintellicode.typescript.completionsEnabled": true,
   // -- Markdown --
   "markdown.extension.showExplorer": true,
   "markdown.extension.toc.githubCompatibility": true,
   // -- Python --
   // Whether to lint Python files using flake8
+  "python.formatting.provider": "yapf",
+  "python.jediEnabled": false,
   "python.linting.flake8Enabled": true,
   "python.linting.mypyEnabled": true,
-  "python.jediEnabled": false,
-  "python.formatting.provider": "yapf",
-  // -- intellicode --
-  "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
-  // -- Formatter --
-  "[markdown]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
-  },
-  "[javascript]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
-  },
-  "[jsonc]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
-  },
-  "[json]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
-  },
-  "[typescript]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  "[css]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "editor.formatOnSave": false
   },
   "[html]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "editor.formatOnSave": false
+  },
+  "[javascript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "editor.formatOnSave": false
+  },
+  "[json]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "editor.formatOnSave": false
+  },
+  "[jsonc]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "editor.formatOnSave": false
+  },
+  "[markdown]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "editor.formatOnSave": false
+  },
+  "[typescript]": {
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "editor.formatOnSave": false,
   },
   "[yaml]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "editor.formatOnSave": false
   },
+  // -- JSDoc --
+  "docthis.includeMemberOfOnClassMembers":false,
+  "docthis.includeMemberOfOnInterfaceMembers":false,
   // -- Lint --
   "eslint.alwaysShowStatus": true,
   "eslint.lintTask.enable": true,
@@ -73,38 +100,92 @@
     "javascriptreact",
     "typescript"
   ],
+  // -- Test --
+  "mocha.files.glob": "test/**/*.ts",
+  "mocha.requires": [
+    "ts-node/register"
+  ],
+  "mocha.nycPath": "./node_modules/.bin/nyc",
   // -- Spell Checker --
   "cSpell.userWords": [
     "LLVM",
     "SQLPL",
     "adduser",
     "autoremove",
+    "borderless",
     "cheatsheet",
     "controlvm",
+    "cpath",
     "cython",
+    "datetime",
     "downlevel",
+    "dropdown",
+    "dropleft",
+    "dropright",
+    "dropup",
     "esnext",
     "flameshot",
+    "flexbox",
+    "focusable",
     "furuta",
     "gitignore",
     "gitlens",
     "hyperline",
+    "index",
     "interop",
     "jupyter",
+    "listbox",
     "lv",
     "markdown",
+    "mlab",
+    "mongodb",
     "nginx",
     "peco",
     "plsql",
     "poweroff",
+    "prepend",
     "readonly",
     "runningvms",
+    "scrollable",
+    "scrollbar",
+    "sendfile",
     "sourcemap",
     "startvm",
     "stringify",
+    "tab",
+    "tabindex",
     "timedatectl",
     "traceback",
     "tslib",
-    "typechecking"
+    "typechecking",
+    "unstyled",
+    "webapp",
+    "xmlns"
   ],
+  "material-icon-theme.folders.theme": "specific",
+  "workbench.colorCustomizations": {
+    "activityBarBadge.background": "#7CB342",
+    "list.activeSelectionForeground": "#7CB342",
+    "list.inactiveSelectionForeground": "#7CB342",
+    "list.highlightForeground": "#7CB342",
+    "scrollbarSlider.activeBackground": "#7CB34250",
+    "editorSuggestWidget.highlightForeground": "#7CB342",
+    "textLink.foreground": "#7CB342",
+    "progressBar.background": "#7CB342",
+    "pickerGroup.foreground": "#7CB342",
+    "tab.activeBorder": "#7CB342",
+    "notificationLink.foreground": "#7CB342",
+    "editorWidget.resizeBorder": "#7CB342",
+    "editorWidget.border": "#7CB342",
+    "settings.modifiedItemIndicator": "#7CB342",
+    "settings.headerForeground": "#7CB342",
+    "panelTitle.activeBorder": "#7CB342",
+    "breadcrumb.activeSelectionForeground": "#7CB342",
+    "menu.selectionForeground": "#7CB342",
+    "menubar.selectionForeground": "#7CB342",
+    "editor.findMatchBorder": "#7CB342",
+    "selection.background": "#7CB34240"
+  },
+  "local-history.daysLimit": 3,
+  "local-history.saveDelay": 60,
 }
