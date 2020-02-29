@@ -50,9 +50,9 @@ if [ -n "$force_color_prompt" ]; then
 	# We have color support; assume it's compliant with Ecma-48
 	# (ISO/IEC-6429). (Lack of such support is extremely rare, and such
 	# a case would tend to support setf rather than setaf.)
-	    color_prompt=yes
+	color_prompt=yes
     else
-	    color_prompt=
+	color_prompt=
     fi
 fi
 
@@ -72,43 +72,23 @@ xterm*|rxvt*)
     ;;
 esac
 
-# enable color support of ls and also add handy aliases
-if [ -x /usr/bin/dircolors ]; then
-    test -r ~/.dircolors && eval "$(dircolors -b ~/.dircolors)" || eval "$(dircolors -b)"
-    alias ls='ls --color=auto'
-    #alias dir='dir --color=auto'
-    #alias vdir='vdir --color=auto'
-
-    alias grep='grep --color=auto'
-    alias fgrep='fgrep --color=auto'
-    alias egrep='egrep --color=auto'
-fi
-
 # colored GCC warnings and errors
 #export GCC_COLORS='error=01;31:warning=01;35:note=01;36:caret=01;32:locus=01:quote=01'
-
-# some more ls aliases
-alias ll='ls -alF'
-alias la='ls -A'
-alias l='ls -CF'
-# 移動/コピー/削除時に、経過を表示
-alias cp 'cp -v'
-alias mv 'mv -v'
-alias rm 'rm -v'
-# 単位をGB,MB,KBにする
-alias df 'df -h'
-
-# Add an "alert" alias for long running commands.  Use like so:
-#   sleep 10; alert
-alias alert='notify-send --urgency=low -i "$([ $? = 0 ] && echo terminal || echo error)" "$(history|tail -n1|sed -e '\''s/^\s*[0-9]\+\s*//;s/[;&|]\s*alert$//'\'')"'
 
 # Alias definitions.
 # You may want to put all your additions into a separate file like
 # ~/.bash_aliases, instead of adding them here directly.
 # See /usr/share/doc/bash-doc/examples in the bash-doc package.
 
-if [ -f ~/.bash_aliases ]; then
-    . ~/.bash_aliases
+BASH_CONFIG_DIR=~/.config/bash
+
+if [ -f $BASH_CONFIG_DIR/aliases.bash ]; then
+    . $BASH_CONFIG_DIR/aliases.bash
+fi
+
+# define functions
+if [ -f $BASH_CONFIG_DIR/functions.bash ]; then
+    . $BASH_CONFIG_DIR/functions.bash
 fi
 
 # enable programmable completion features (you don't need to enable
@@ -121,30 +101,3 @@ if ! shopt -oq posix; then
     . /etc/bash_completion
   fi
 fi
-
-# sharing history between terminal window
-function share_history {
-    history -a  # .bash_historyに前回コマンドを1行追記
-    history -c  # 端末ローカルの履歴を一旦消去
-    history -r  # .bash_historyから履歴を読み込み直す
-}
-PROMPT_COMMAND='share_history'  # 上記関数をプロンプト毎に自動実施
-
-# alias for jupyter notebook
-alias jnote='jupyter notebook'
-# alias file or folder open
-alias open='xdg-open'
-
-# added by Anaconda3 installer
-export PATH="/home/yusukefulltype/anaconda3/bin:$PATH"
-
-# peco - cd expanded
-function cc {
-    local dir="$( find . -type d | grep -v .git | peco )"
-    if [ ! -z "$dir" ] ; then
-        cd "$dir"
-    fi
-}
-complete -C '/usr/local/bin/aws_completer' aws
-
-[ -f ~/.fzf.bash ] && source ~/.fzf.bash
