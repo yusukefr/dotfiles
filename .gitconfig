@@ -16,7 +16,7 @@
 	# helper = !aws --region us-east-2 --profile CodeCommitProfile credential-helper $@
 	# UseHttpPath = true
 	
-	helper = cache --timeout=3600
+	helper = cache --timeout=36000
 [grep]
 	lineNumber = true
 # [http]
